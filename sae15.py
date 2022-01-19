@@ -82,39 +82,6 @@ for ligne in fichier:
                 requestcounter+=1
             if "reply" in ligne:
                 replycounter+=1
-'''ipsource2 = []
-ipdesti2 = []   
-ipdestifinale=[]             
-                
-for i in ipsr:
-    if not "." in i:
-        ipsource2.append(i)
-    elif "ssh" in i or len(i) > 15 or "B" in i:
-        ports = i.split(".")
-        del ports[-1]
-        delim = "."
-        delim = delim.join(ports)
-        ipsource2.append(delim)
-    else:
-        ipsource2.append(i)
-for j in ipde:
-    if not "." in j:
-        ipdesti2.append(j)
-    elif "ssh" in j or len(j) > 15 or "B" in j:
-        ports = j.split(".")
-        del ports[-1]
-        delim = "."
-        delim = delim.join(ports)
-        ipdesti2.append(delim)
-    else:
-        ipdesti2.append(j)
-
-for l in ipdesti2:
-    if not ":" in l:
-        ipdestifinale.append(l)
-    else:
-        deuxp = l.split(":")
-        ipdestifinale.append(deuxp[0])   '''
 
              
 globalflagcounter=flagcounter+flagcounterP+flagcounterS
